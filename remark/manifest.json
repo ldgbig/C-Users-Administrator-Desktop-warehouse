@@ -1,0 +1,14 @@
+{
+    "manifest_version":2,
+    "version":"1.0.0",
+    "name":"remark",
+    "description":"chrome插件",
+    "browser_action":{},
+    "permissions":["*://www.amazon.com/"],
+    "background":{},
+    "content_scripts":[{
+            "matches":["*://www.amazon.com/*/*/product-reviews/*/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews"],
+            "js":["index.js"]
+        }]
+     
+}
